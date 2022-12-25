@@ -16,6 +16,8 @@ const products_module_1 = require("./products/products.module");
 const config_1 = require("@nestjs/config");
 const basket_module_1 = require("./basket/basket.module");
 const basket_entity_1 = require("./basket/basket.entity");
+const serve_static_1 = require("@nestjs/serve-static");
+const path_1 = require("path");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -32,6 +34,9 @@ AppModule = __decorate([
                 synchronize: false,
             }),
             config_1.ConfigModule.forRoot(),
+            serve_static_1.ServeStaticModule.forRoot({
+                rootPath: (0, path_1.join)(__dirname, '..', 'public'),
+            }),
             products_module_1.ProductsModule,
             basket_module_1.BasketModule,
         ],

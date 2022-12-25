@@ -1,0 +1,30 @@
+#main-title-container{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    justify-content: center;
+}
+#main-title-text{
+    position: absolute;
+    color: var(--pink-color);
+    text-align: center;
+}
+
+#main-title-container > svg{
+    width: 496px;
+    height: 272px;
+}
+
+@media screen and (max-width: 800px) {
+    #main-title-container {
+        margin-top: 50px;
+    }
+    #main-title-text{
+        font-size: 22px;
+    }
+    #main-title-container > svg{
+        width: 248px;
+        height: 136px;
+    }
+}

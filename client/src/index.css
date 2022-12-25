@@ -1,3 +1,8 @@
+:root{
+  --brown-bg-color: #1B1717;
+  --pink-color: #DCCECE;
+  --brown-bg-color-2: #554E4E;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,8 +11,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+html{
+  width: 100%;
+}
+#root{
+  min-height: 100%;
+}
+/*body > #root > div {*/
+/*  height: 100vh;*/
+/*}*/

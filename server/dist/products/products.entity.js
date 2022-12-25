@@ -23,6 +23,10 @@ __decorate([
 ], ProductsEntity.prototype, "name", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
+    __metadata("design:type", String)
+], ProductsEntity.prototype, "author", void 0);
+__decorate([
+    (0, typeorm_1.Column)(),
     __metadata("design:type", Number)
 ], ProductsEntity.prototype, "cost", void 0);
 __decorate([
@@ -38,7 +42,7 @@ __decorate([
     __metadata("design:type", Boolean)
 ], ProductsEntity.prototype, "isSold", void 0);
 ProductsEntity = __decorate([
-    (0, typeorm_1.Entity)({ name: 'Products', synchronize: false })
+    (0, typeorm_1.Entity)({ name: 'Products', synchronize: true })
 ], ProductsEntity);
 exports.ProductsEntity = ProductsEntity;
 //# sourceMappingURL=products.entity.js.map

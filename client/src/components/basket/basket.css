@@ -1,0 +1,23 @@
+#basket{
+    visibility: hidden;
+    left: auto;
+    right: 40px;
+    top: 150px;
+    z-index: 1000;
+    position: absolute;
+    width: 400px;
+    aspect-ratio: 1/1.5;
+    background-color: white;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+#basket.shown{
+    visibility: visible;
+}
+#basket-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}

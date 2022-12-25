@@ -15,7 +15,7 @@ const products_entity_1 = require("../products/products.entity");
 let BasketEntity = class BasketEntity {
 };
 __decorate([
-    (0, typeorm_1.PrimaryGeneratedColumn)(),
+    (0, typeorm_1.PrimaryGeneratedColumn)({ type: 'int' }),
     __metadata("design:type", Number)
 ], BasketEntity.prototype, "id", void 0);
 __decorate([
@@ -32,7 +32,7 @@ __decorate([
     __metadata("design:type", Array)
 ], BasketEntity.prototype, "products", void 0);
 BasketEntity = __decorate([
-    (0, typeorm_1.Entity)({ name: 'Basket', synchronize: false })
+    (0, typeorm_1.Entity)({ name: 'Basket', synchronize: true })
 ], BasketEntity);
 exports.BasketEntity = BasketEntity;
 //# sourceMappingURL=basket.entity.js.map

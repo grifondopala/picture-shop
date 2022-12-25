@@ -1,0 +1,121 @@
+.btn_default{
+    position: relative;
+    height: 50px;
+    width: 100px;
+    background-color: transparent;
+    border: 1px solid var(--pink-color);
+    color: var(--pink-color);
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: 0;
+}
+.btn_default:hover{
+    border: 0;
+    background-color: var(--brown-bg-color-2);
+}
+
+.btn_primary{
+    height: 50px;
+    width: 150px;
+    background-color: var(--pink-color);
+    color: bold var(--brown-bg-color);
+    font-size: 14px;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn_primary > .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+}
+
+.filter{
+    height: 30px;
+    margin-right: 0;
+    box-sizing: border-box;
+    padding: 5px 17px 5px 17px;
+    background-color: transparent;
+    color: var(--pink-color);
+    opacity: 0.5;
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+    border: 1px solid transparent;
+}
+.filter:hover{
+    opacity: 1;
+}
+.filter.active{
+    opacity: 1;
+    border: 1px solid var(--pink-color);
+}
+
+.search_div{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: 0;
+}
+.search_div > .container{
+    padding: 0;
+    display: flex;
+    width: 100%;
+    height: 30px;
+}
+.search_div > .container > input{
+    background-color: transparent;
+    border: 0;
+    width: 300px;
+    font-size: 16px;
+    color: var(--pink-color);
+    font-weight: bold;
+    opacity: 0.5;
+    margin-right: auto;
+    margin-left: 0;
+    outline: none;
+}
+.search_div > .container > input:focus{
+    opacity: 1;
+}
+.search_div > .container > button{
+    margin-right: 0;
+    margin-left: auto;
+    background-color: transparent;
+    color: var(--pink-color);
+    border: 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+.search_div > .container > button:hover{
+    opacity: 0.5;
+}
+.search_div > .container > button > div{
+    display: flex;
+    gap: 11px;
+}
+#search_line{
+    margin-top: 10px;
+    height: 1px;
+    background-color: var(--pink-color);
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 1000px) {
+    .filter{
+        margin-top: 5px;
+    }
+    .search_div{
+        opacity: 0;
+    }
+}
+@media screen and (max-width: 400px) {
+    .filter{
+        height: 50px;
+    }
+}

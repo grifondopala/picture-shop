@@ -9,6 +9,7 @@ export declare class ProductsService {
     create(dto: CreateProductDto): Promise<"secret key is not right" | ({
         id: number;
         name: string;
+        author: string;
         cost: number;
         imageSrc: string;
         isPriority: boolean;
@@ -22,6 +23,7 @@ export declare class ProductsService {
         isSold: boolean;
         id: number;
         name: string;
+        author: string;
         cost: number;
         imageSrc: string;
         isPriority: boolean;

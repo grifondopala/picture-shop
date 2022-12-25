@@ -1,0 +1,30 @@
+main{
+    width: 70%;
+    margin: 50px auto;
+}
+#main-nav-div{
+    display: flex;
+}
+
+#pictures-div{
+    display: grid;
+    grid-template-columns: 25fr 25fr 25fr 25fr;
+    grid-gap: calc(70vw * 0.03);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    #main-nav-div{
+        flex-direction: column;
+    }
+    #pictures-div{
+        grid-template-columns: 50fr 50fr;
+    }
+}
+@media screen and (max-width: 500px) {
+    #pictures-div{
+        grid-template-columns: 1fr;
+    }
+}

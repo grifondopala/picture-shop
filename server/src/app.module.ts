@@ -7,6 +7,8 @@ import { ProductsModule } from './products/products.module';
 import { ConfigModule } from '@nestjs/config';
 import { BasketModule } from './basket/basket.module';
 import { BasketEntity } from './basket/basket.entity';
+import { ServeStaticModule } from '@nestjs/serve-static';
+import { join } from 'path';
 
 @Module({
   imports: [
@@ -21,6 +23,9 @@ import { BasketEntity } from './basket/basket.entity';
       synchronize: false,
     }),
     ConfigModule.forRoot(),
+    ServeStaticModule.forRoot({
+      rootPath: join(__dirname, '..', 'public'),
+    }),
     ProductsModule,
     BasketModule,
   ],

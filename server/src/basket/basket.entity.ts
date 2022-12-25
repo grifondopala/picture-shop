@@ -7,9 +7,9 @@ import {
 } from 'typeorm';
 import { ProductsEntity } from '../products/products.entity';
 
-@Entity({ name: 'Basket', synchronize: false })
+@Entity({ name: 'Basket', synchronize: true })
 export class BasketEntity {
-  @PrimaryGeneratedColumn()
+  @PrimaryGeneratedColumn({ type: 'int' })
   id: number;
 
   @Column()
