@@ -4,7 +4,7 @@
 
 Frontend: React, Redux
 
-'''sh
+'''console
 cd client
 npm start
 '''
