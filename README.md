@@ -4,10 +4,10 @@
 
 Frontend: React, Redux
 
-'''console
+```sh
 cd client
 npm start
-'''
+```
 
 Backend: Nest.js, MySql
 
